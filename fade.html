@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("h1").css("display", "none");
+            $("#show").click(function() {
+                $("h1").fadeIn("slow");
+            });
+            $("#hide").click(function() {
+                $("h1").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <h1>Learning JQuery</h1>
+    <hr>
+</body>
+</html>

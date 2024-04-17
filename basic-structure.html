@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        // When loading:
+        $(document).ready(function() {
+            let field = $("input").val();
+            let title = $("#title").html();
+            let subtitle = $(".subtitle").html();
+
+            alert(field);
+            alert(title);
+            alert(subtitle);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" value="Name">
+    <h1 id="title">H1 title</h1>
+    <h2 class="subtitle">H2 subtitle</h2>
+</body>
+</html>
